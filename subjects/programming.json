@@ -184,5 +184,11 @@
     "description": "آموزش صفر تا صد یادگیری ماشین، یادگیری عمیق، پایتون و هر چیزی که به هوش مصنوعی مرتبط باشه",
     "website": "https://www.data-hub.ir",
     "channel": "https://www.youtube.com/datahub1"
+  },
+  {
+    "channelName": "Code With Saleh",
+    "description": "ویدیوهای آموزشی در حوزه برنامه نویسی و هوش منصوعی",
+    "website": "",
+    "channel": "https://www.youtube.com/@codewithsaleh"
   }
 ]
