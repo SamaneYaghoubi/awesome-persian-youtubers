@@ -1,0 +1,31 @@
+# This workflow does a clean installation of node dependencies, validates the
+# subject data files and makes sure the README can be generated from them.
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: "yarn"
+      - run: yarn install --frozen-lockfile
+      - name: Validate subject JSON files
+        run: |
+          for f in subjects/*.json; do
+            node -e "JSON.parse(require('fs').readFileSync('$f'))" || { echo "Invalid JSON: $f"; exit 1; }
+          done
+      - name: Check README generation
+        run: yarn run update
