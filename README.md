@@ -217,6 +217,10 @@
 - کانال مرتبط با یک شبکه تلویزیونی یا یک ارگان دولتی نباشد و اصطلاحا توسط یک یوتیوبر تولید شده باشد.
 - زبان ویدئوها فارسی باشد.
 
+## ❤️ باتشکر از کسانی که بهمون کمک کردند:
+
+<a href="https://github.com/SamaneYaghoubi/awesome-persian-youtubers/graphs/contributors"><img src="https://contrib.rocks/image?repo=SamaneYaghoubi/awesome-persian-youtubers" alt="مشارکت‌کنندگان" /></a>
+
 [title]: assets/icons/utubetitle.svg 'لیست بهترین کانال های یوتیوب فارسی'
 
 </div>
