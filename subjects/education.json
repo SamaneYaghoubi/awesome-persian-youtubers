@@ -41,10 +41,16 @@
     "website": "http://akhavass.org/",
     "channel": "https://www.youtube.com/channel/UCUmwCz1h-GTcrEX2kF8XBLw"
   },
- {
+  {
     "channelName": "Parisa Bajelan",
     "description": "آموزش عکاسی، عکاسی در شب و ادیت فیلم و عکس",
     "website": "https://parisabajelan.com/",
     "channel": "https://www.youtube.com/parisabajelan"
-  } 
+  },
+  {
+    "channelName": "Ziya Sadr",
+    "description": "آموزش‌ امنیت، حریم خصوصی، کیف‌پولها، ابزارها و نرم‌افزارهای بیتکوینی و همچنان اکوسیستم و مفاهیم بیتکوین",
+    "website": "https://www.ziyasadr.com/",
+    "channel": "https://www.youtube.com/c/ZiyaSadr"
+  }
 ]
