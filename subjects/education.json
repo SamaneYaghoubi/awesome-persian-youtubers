@@ -1,5 +1,11 @@
 [
   {
+    "channelName": "Lingano",
+    "description": "آموزش کاربردی و اصولی زبان انگلیسی",
+    "website": "https://lingano.com/",
+    "channel": "https://www.youtube.com/@lingano_academy"
+  },
+  {
     "channelName": "Turkish with Mehdi",
     "description": "آموزش زبان ترکی استانبولی",
     "website": "",
@@ -34,12 +40,6 @@
     "description": "آموزش زبان انگلیسی به زبان فارسی در کافه زبان توسط میسا",
     "website": "",
     "channel": "https://www.youtube.com/channel/UCHy89KmzEPyTQMHjIf6gZFw"
-  },
-  {
-    "channelName": "Paria Akhavass",
-    "description": "آموزش زبان انگلیسی به زبان فارسی توسط پریا اخواص",
-    "website": "http://akhavass.org/",
-    "channel": "https://www.youtube.com/channel/UCUmwCz1h-GTcrEX2kF8XBLw"
   },
   {
     "channelName": "Parisa Bajelan",
