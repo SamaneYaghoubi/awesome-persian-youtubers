@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#F4F6F3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0C1A1D" media="(prefers-color-scheme: dark)" />
+<title>بهترین یوتیوبرهای فارسی‌زبان</title>
+<meta name="description" content="فهرست متن‌باز و به‌روزشونده‌ی بهترین کانال‌های یوتیوب فارسی‌زبان در دسته‌های تکنولوژی، برنامه‌نویسی، گیم، ولاگ و بیشتر." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B7A72'/%3E%3Cpath d='M13 10.5v11l9-5.5z' fill='%23F4F6F3'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" />
+<style>
+  :root {
+    --paper: #F4F6F3;
+    --surface: #FDFEFD;
+    --ink: #17272E;
+    --muted: #64797F;
+    --line: rgba(23, 39, 46, 0.12);
+    --firoozeh: #0B7A72;
+    --firoozeh-deep: #085E58;
+    --firoozeh-soft: rgba(11, 122, 114, 0.08);
+    --saffron: #C77E12;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0C1A1D;
+      --surface: #122428;
+      --ink: #E7F0EE;
+      --muted: #93ABAD;
+      --line: rgba(231, 240, 238, 0.13);
+      --firoozeh: #48C9BC;
+      --firoozeh-deep: #6ADCD0;
+      --firoozeh-soft: rgba(72, 201, 188, 0.1);
+      --saffron: #E5A83D;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Vazirmatn, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--firoozeh); text-decoration: none; }
+  a:hover { color: var(--firoozeh-deep); text-decoration: underline; text-underline-offset: 4px; }
+  :focus-visible { outline: 2px solid var(--firoozeh); outline-offset: 3px; border-radius: 4px; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+    background: var(--firoozeh-soft);
+    color: var(--firoozeh-deep);
+    padding: 2px 7px;
+    border-radius: 6px;
+  }
+  .skip {
+    position: absolute;
+    inset-inline-start: 12px;
+    top: -48px;
+    z-index: 20;
+    background: var(--surface);
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: top 0.15s;
+  }
+  .skip:focus { top: 12px; }
+
+  /* ---------- sticky bar ---------- */
+  .bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px clamp(16px, 4vw, 40px);
+    background: color-mix(in srgb, var(--paper) 82%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .brand {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .brand:hover { color: var(--firoozeh); text-decoration: none; }
+  .search-wrap { flex: 1; display: flex; justify-content: center; }
+  #search {
+    width: min(440px, 100%);
+    font: inherit;
+    font-size: 14px;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: border-color 0.15s;
+  }
+  #search::placeholder { color: var(--muted); }
+  #search:focus { outline: none; border-color: var(--firoozeh); }
+  #search:disabled { opacity: 0.5; }
+  #count {
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 72px;
+    text-align: start;
+  }
+  .gh { display: inline-flex; color: var(--ink); }
+  .gh:hover { color: var(--firoozeh); }
+  .gh svg { width: 22px; height: 22px; fill: currentColor; }
+
+  main { max-width: 980px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px) 40px; }
+
+  /* ---------- hero ---------- */
+  .hero { padding: clamp(48px, 9vh, 88px) 0 8px; }
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .diamond {
+    width: 9px;
+    height: 9px;
+    background: var(--saffron);
+    transform: rotate(45deg);
+    flex: none;
+  }
+  .hero h1 {
+    margin: 0;
+    font-size: clamp(34px, 6.5vw, 62px);
+    font-weight: 900;
+    line-height: 1.45;
+    text-wrap: balance;
+    max-width: 17ch;
+  }
+  .intro {
+    margin: 20px 0 0;
+    max-width: 52ch;
+    font-size: clamp(15px, 2vw, 17px);
+    color: var(--muted);
+  }
+  .stats { margin: 14px 0 0; font-size: 15px; }
+  .stats b { font-weight: 800; color: var(--firoozeh); font-size: 1.25em; }
+
+  /* ---------- kashi tile grid ---------- */
+  .tiles-label { margin: 44px 0 12px; font-size: 13px; font-weight: 600; color: var(--muted); }
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    gap: 10px;
+    padding: 0;
+    margin: 0 0 56px;
+  }
+  .tile {
+    display: block;
+    padding: 16px 16px 12px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: inset 0 0 0 4px var(--paper);
+    color: var(--ink);
+    transition: transform 0.15s, border-color 0.15s, background 0.15s;
+  }
+  .tile:hover, .tile:focus-visible {
+    text-decoration: none;
+    color: var(--ink);
+    border-color: var(--firoozeh);
+    background: var(--firoozeh-soft);
+    transform: translateY(-2px);
+  }
+  .tile b {
+    display: block;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--firoozeh);
+  }
+  .tile span { font-size: 13.5px; font-weight: 500; }
+
+  /* ---------- category sections ---------- */
+  .cat { scroll-margin-top: 84px; margin: 0 0 52px; }
+  .cat h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 6px;
+    font-size: clamp(21px, 3vw, 26px);
+    font-weight: 800;
+    line-height: 1.6;
+  }
+  .cat h2 .diamond { background: var(--firoozeh); }
+  .ccount { font-size: 13px; font-weight: 500; color: var(--muted); margin-inline-start: auto; white-space: nowrap; }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .row {
+    display: grid;
+    grid-template-columns: 218px 1fr auto;
+    gap: 8px 20px;
+    align-items: baseline;
+    padding: 14px 2px;
+    border-top: 1px solid var(--line);
+  }
+  .row[hidden] { display: none; }
+  .name {
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+  .name::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    margin-inline-end: 9px;
+    background: var(--firoozeh);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    opacity: 0.55;
+    transition: opacity 0.15s;
+  }
+  .row:hover .name::before { opacity: 1; }
+  .name:hover { color: var(--firoozeh); text-decoration: none; }
+  .desc { margin: 0; font-size: 14.5px; color: var(--muted); }
+  .site { font-size: 13.5px; white-space: nowrap; }
+  .site .none { color: var(--muted); opacity: 0.55; }
+
+  .empty {
+    text-align: center;
+    padding: 72px 16px;
+    color: var(--muted);
+  }
+  .empty p { margin: 0 0 4px; font-size: 20px; font-weight: 700; color: var(--ink); }
+  .empty button {
+    margin-top: 16px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--firoozeh);
+    background: var(--firoozeh-soft);
+    border: 1px solid var(--firoozeh);
+    border-radius: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+
+  /* ---------- outro / contribution ---------- */
+  .outro {
+    margin-top: 72px;
+    padding: 36px clamp(20px, 4vw, 36px) 40px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: inset 0 0 0 4px var(--paper);
+  }
+  .outro h2 { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; font-size: 22px; font-weight: 800; }
+  .outro h3 { margin: 22px 0 6px; font-size: 16px; font-weight: 700; }
+  .outro p { margin: 8px 0; color: var(--muted); font-size: 15px; }
+  .outro ul { margin: 8px 0; padding-inline-start: 22px; color: var(--muted); font-size: 15px; }
+  .outro .figure { margin: 16px 0 4px; }
+  .outro img { max-width: 100%; height: auto; border-radius: 10px; }
+  .cta {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14.5px;
+    color: var(--paper);
+    background: var(--firoozeh);
+    border-radius: 10px;
+    padding: 10px 22px;
+  }
+  .cta:hover { color: var(--paper); background: var(--firoozeh-deep); text-decoration: none; }
+  .colophon { margin: 28px 0 0; text-align: center; font-size: 13px; color: var(--muted); }
+
+  /* ---------- loading / error ---------- */
+  .state { padding: 96px 16px; text-align: center; color: var(--muted); }
+  .state p { margin: 0 0 4px; font-size: 19px; font-weight: 700; color: var(--ink); }
+  .skeleton { display: grid; gap: 12px; justify-items: center; }
+  .skeleton i {
+    display: block;
+    height: 14px;
+    border-radius: 7px;
+    background: var(--line);
+  }
+  .skeleton i:nth-child(1) { width: min(340px, 70%); height: 30px; }
+  .skeleton i:nth-child(2) { width: min(460px, 90%); }
+  .skeleton i:nth-child(3) { width: min(420px, 80%); }
+
+  /* ---------- motion ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero, .tiles-label, .tiles, .cat, .outro {
+      animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+    }
+    .tile { animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.3, 1) both; animation-delay: var(--d, 0ms); }
+    .skeleton i { animation: pulse 1.2s ease-in-out infinite; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @keyframes pulse { 50% { opacity: 0.45; } }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* ---------- narrow screens ---------- */
+  @media (max-width: 720px) {
+    .brand { display: none; }
+    #count { min-width: 0; }
+    .row { grid-template-columns: 1fr; gap: 2px; padding: 16px 2px; }
+    .site { justify-self: start; }
+    .site .none { display: none; }
+    .tiles { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); }
+    .ccount { margin-inline-start: 0; }
+    .cat h2 { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#list">پرش به فهرست کانال‌ها</a>
+
+<header class="bar">
+  <a class="brand" href="#top">یوتیوبرهای فارسی‌زبان</a>
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="جستجو در کانال‌ها…" aria-label="جستجو در کانال‌ها" disabled />
+  </div>
+  <span id="count" aria-live="polite"></span>
+  <a class="gh" href="https://github.com/SamaneYaghoubi/awesome-persian-youtubers" target="_blank" rel="noopener noreferrer" aria-label="مخزن گیت‌هاب">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+  </a>
+</header>
+
+<main id="app">
+  <div class="state" id="loading">
+    <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p style="margin-top:24px">در حال بارگیری فهرست…</p>
+  </div>
+</main>
+
+<noscript>
+  <div class="state">
+    <p>این صفحه برای نمایش فهرست به جاوااسکریپت نیاز دارد.</p>
+    <span>نسخهٔ متنی را در <a href="https://github.com/SamaneYaghoubi/awesome-persian-youtubers#readme">گیت‌هاب</a> ببینید.</span>
+  </div>
+</noscript>
+
+<script>
+(function () {
+  'use strict';
+
+  var REPO = 'https://github.com/SamaneYaghoubi/awesome-persian-youtubers';
+  var SOURCES = [
+    './README.md',
+    'https://raw.githubusercontent.com/SamaneYaghoubi/awesome-persian-youtubers/master/README.md'
+  ];
+
+  /* ---------- helpers ---------- */
+
+  function fa(n) {
+    return String(n).replace(/\d/g, function (d) { return '۰۱۲۳۴۵۶۷۸۹'[d]; });
+  }
+
+  function esc(s) {
+    return s.replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  /* escape first, then linkify [text](url) and `code` */
+  function inline(s) {
+    var out = esc(s);
+    out = out.replace(/`([^`]+)`/g, '<code>$1</code>');
+    out = out.replace(/\[([^\]]*)\]\(([^()\s]*)\)/g, function (m, text, url) {
+      if (!/^https?:\/\//.test(url)) return text;
+      return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + text + '</a>';
+    });
+    return out;
+  }
+
+  /* normalize Persian/Arabic variants for search */
+  function norm(s) {
+    return s.toLowerCase()
+      .replace(/[يئ]/g, 'ی').replace(/ك/g, 'ک')
+      .replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ؤ/g, 'و')
+      .replace(/[ً-ْٰ]/g, '')
+      .replace(/‌/g, '');
+  }
+
+  /* ---------- markdown parser (scoped to this generated README) ---------- */
+
+  function splitRow(line) {
+    var cells = line.split('|').map(function (c) { return c.trim(); });
+    if (cells.length && cells[0] === '') cells.shift();
+    if (cells.length && cells[cells.length - 1] === '') cells.pop();
+    return cells;
+  }
+
+  function isSeparatorRow(cells) {
+    return cells.length > 0 && cells.every(function (c) { return /^:?-{2,}:?$/.test(c); });
+  }
+
+  function parse(md) {
+    var lines = md.split('\n');
+    var blocks = [];
+    var i = 0;
+    while (i < lines.length) {
+      var line = lines[i].trim();
+
+      /* the generator emits one meaningful HTML shape: a (possibly linked) image */
+      var aimg = line.match(/^<a\s+href="(https?:\/\/[^"]+)"[^>]*>\s*<img\s+([^>]*?)\/?>\s*<\/a>$/i) ||
+                 line.match(/^()<img\s+([^>]*?)\/?>$/i);
+      if (aimg) {
+        var src = (aimg[2].match(/src="(https?:\/\/[^"]+)"/i) || [])[1];
+        var alt = (aimg[2].match(/alt="([^"]*)"/i) || [])[1] || '';
+        if (src) { blocks.push({ type: 'img', src: src, alt: alt, href: aimg[1] }); i++; continue; }
+      }
+
+      if (!line || line.charAt(0) === '<' || /^\[[^\]]+\]:\s/.test(line)) { i++; continue; }
+
+      var h = line.match(/^(#{1,3})\s+(.*)$/);
+      if (h) {
+        var text = h[2].trim();
+        if (text && text.indexOf('[![') === -1) {
+          blocks.push({ type: 'h' + h[1].length, text: text });
+        }
+        i++; continue;
+      }
+
+      if (line.charAt(0) === '|') {
+        var rows = [];
+        while (i < lines.length && lines[i].trim().charAt(0) === '|') {
+          var cells = splitRow(lines[i].trim());
+          if (!isSeparatorRow(cells)) rows.push(cells);
+          i++;
+        }
+        if (rows.length > 1) blocks.push({ type: 'table', header: rows[0], rows: rows.slice(1) });
+        continue;
+      }
+
+      if (/^-\s+/.test(line)) {
+        var items = [];
+        while (i < lines.length && /^-\s+/.test(lines[i].trim())) {
+          items.push(lines[i].trim().replace(/^-\s+/, ''));
+          i++;
+        }
+        blocks.push({ type: 'ul', items: items });
+        continue;
+      }
+
+      blocks.push({ type: 'p', text: line });
+      i++;
+    }
+    return blocks;
+  }
+
+  /* group blocks: title, intro, table-bearing categories, trailing prose */
+  function structure(blocks) {
+    var doc = { title: '', intro: [], sections: [] };
+    var current = null;
+    blocks.forEach(function (b) {
+      if (b.type === 'h1') { if (!doc.title) doc.title = b.text; return; }
+      if (b.type === 'h2') { current = { title: b.text, table: null, extra: [] }; doc.sections.push(current); return; }
+      if (!current) { doc.intro.push(b); return; }
+      if (b.type === 'table' && !current.table) { current.table = b; return; }
+      current.extra.push(b);
+    });
+    doc.cats = doc.sections.filter(function (s) { return s.table; });
+    doc.outro = doc.sections.filter(function (s) { return !s.table; });
+    return doc;
+  }
+
+  /* a channel row: [name, description, website], merging any stray extra cells
+     (one README row contains literal `|` characters) into the description */
+  function normalizeRow(cells) {
+    if (cells.length <= 3) {
+      while (cells.length < 3) cells.push('--');
+      return cells;
+    }
+    return [cells[0], cells.slice(1, -1).join(' | '), cells[cells.length - 1]];
+  }
+
+  /* ---------- rendering ---------- */
+
+  function blockHtml(b) {
+    if (b.type === 'img') {
+      var im = '<img src="' + esc(b.src) + '" alt="' + esc(b.alt) + '" loading="lazy" />';
+      return '<p class="figure">' +
+        (b.href ? '<a href="' + esc(b.href) + '" target="_blank" rel="noopener noreferrer">' + im + '</a>' : im) +
+        '</p>';
+    }
+    if (b.type === 'h3') return '<h3>' + inline(b.text) + '</h3>';
+    if (b.type === 'ul') {
+      return '<ul>' + b.items.map(function (it) { return '<li>' + inline(it) + '</li>'; }).join('') + '</ul>';
+    }
+    return '<p>' + inline(b.text) + '</p>';
+  }
+
+  function siteHtml(cell) {
+    var c = cell.trim();
+    if (!c || c === '--') return '<span class="none">—</span>';
+    return inline(c);
+  }
+
+  function nameHtml(cell) {
+    var m = cell.match(/^\[([^\]]*)\]\(([^()\s]*)\)$/);
+    if (m && /^https?:\/\//.test(m[2])) {
+      return '<a class="name" href="' + esc(m[2]) + '" target="_blank" rel="noopener noreferrer"><bdi>' + esc(m[1]) + '</bdi></a>';
+    }
+    return '<span class="name"><bdi>' + esc(cell) + '</bdi></span>';
+  }
+
+  function render(doc) {
+    var total = 0;
+    doc.cats.forEach(function (c) { total += c.table.rows.length; });
+
+    var html = '';
+
+    html += '<section class="hero">';
+    html += '<p class="eyebrow"><span class="diamond" aria-hidden="true"></span>فهرست متن‌باز · همیشه به‌روز</p>';
+    html += '<h1>' + inline(doc.title || 'یوتیوبرهای فارسی‌زبان') + '</h1>';
+    doc.intro.forEach(function (b) {
+      if (b.type === 'p') html += '<p class="intro">' + inline(b.text) + '</p>';
+    });
+    html += '<p class="stats"><b>' + fa(total) + '</b> کانال در <b>' + fa(doc.cats.length) + '</b> دستهٔ موضوعی</p>';
+    html += '</section>';
+
+    html += '<p class="tiles-label" id="cats-label">دسته‌ها</p>';
+    html += '<nav class="tiles" aria-labelledby="cats-label">';
+    doc.cats.forEach(function (c, i) {
+      html += '<a class="tile" href="#cat-' + i + '" style="--d:' + (i * 35) + 'ms">' +
+        '<b>' + fa(c.table.rows.length) + '</b><span>' + inline(c.title) + '</span></a>';
+    });
+    html += '</nav>';
+
+    html += '<div id="list">';
+    doc.cats.forEach(function (c, i) {
+      html += '<section class="cat" id="cat-' + i + '">';
+      html += '<h2><span class="diamond" aria-hidden="true"></span>' + inline(c.title) +
+        '<span class="ccount" data-total="' + c.table.rows.length + '">' + fa(c.table.rows.length) + ' کانال</span></h2>';
+      html += '<ul class="rows">';
+      c.table.rows.forEach(function (cells) {
+        var r = normalizeRow(cells);
+        html += '<li class="row">' + nameHtml(r[0]) +
+          '<p class="desc">' + inline(r[1]) + '</p>' +
+          '<span class="site">' + siteHtml(r[2]) + '</span></li>';
+      });
+      html += '</ul></section>';
+    });
+    html += '<div class="empty" id="empty" hidden><p>چیزی پیدا نشد</p><span>عبارت دیگری را امتحان کنید.</span><br />' +
+      '<button type="button" id="clear">پاک کردن جستجو</button></div>';
+    html += '</div>';
+
+    html += '<footer class="outro">';
+    doc.outro.forEach(function (s) {
+      html += '<h2><span class="diamond" aria-hidden="true"></span>' + inline(s.title) + '</h2>';
+      html += s.extra.map(blockHtml).join('');
+    });
+    html += '<a class="cta" href="' + REPO + '" target="_blank" rel="noopener noreferrer">مشارکت در گیت‌هاب</a>';
+    html += '<p class="colophon">این صفحه هر بار از روی <a href="' + REPO + '/blob/master/README.md" target="_blank" rel="noopener noreferrer">README</a> مخزن ساخته می‌شود.</p>';
+    html += '</footer>';
+
+    document.getElementById('app').innerHTML = html;
+    wireSearch(total);
+    wireNav();
+  }
+
+  /* explicit anchor scrolling: sections exist only after the async fetch,
+     so native fragment navigation cannot find them on initial load */
+  function scrollToSection(id) {
+    var t = document.getElementById(id);
+    if (!t) return false;
+    var bar = document.querySelector('.bar');
+    var y = t.getBoundingClientRect().top + window.pageYOffset - (bar ? bar.offsetHeight : 70) - 14;
+    var smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: Math.max(y, 0), behavior: smooth ? 'smooth' : 'auto' });
+    return true;
+  }
+
+  function wireNav() {
+    [].forEach.call(document.querySelectorAll('.tiles a'), function (a) {
+      a.addEventListener('click', function (e) {
+        var id = (a.getAttribute('href') || '').slice(1);
+        if (scrollToSection(id)) {
+          e.preventDefault();
+          history.pushState(null, '', '#' + id);
+        }
+      });
+    });
+    if (location.hash) scrollToSection(location.hash.slice(1));
+  }
+
+  /* ---------- search ---------- */
+
+  function wireSearch(total) {
+    var input = document.getElementById('search');
+    var count = document.getElementById('count');
+    var empty = document.getElementById('empty');
+    var cats = [].slice.call(document.querySelectorAll('.cat')).map(function (sec) {
+      return {
+        sec: sec,
+        ccount: sec.querySelector('.ccount'),
+        rows: [].slice.call(sec.querySelectorAll('.row')).map(function (row) {
+          return { el: row, hay: norm(row.textContent) };
+        })
+      };
+    });
+
+    function apply() {
+      var tokens = norm(input.value).trim().split(/\s+/).filter(Boolean);
+      var visible = 0;
+      cats.forEach(function (c) {
+        var v = 0;
+        c.rows.forEach(function (r) {
+          var show = tokens.every(function (t) { return r.hay.indexOf(t) !== -1; });
+          r.el.hidden = !show;
+          if (show) v++;
+        });
+        c.sec.hidden = v === 0;
+        c.ccount.textContent = fa(v) + ' کانال';
+        visible += v;
+      });
+      empty.hidden = visible !== 0;
+      count.textContent = tokens.length ? fa(visible) + ' نتیجه' : fa(total) + ' کانال';
+    }
+
+    input.addEventListener('input', apply);
+    document.getElementById('clear').addEventListener('click', function () {
+      input.value = '';
+      apply();
+      input.focus();
+    });
+    input.disabled = false;
+    count.textContent = fa(total) + ' کانال';
+  }
+
+  /* ---------- fetch: same-origin README first, raw GitHub as fallback ---------- */
+
+  function showError() {
+    document.getElementById('app').innerHTML =
+      '<div class="state"><p>فهرست بارگیری نشد</p>' +
+      '<span>اتصال اینترنت را بررسی کنید یا نسخهٔ متنی را در <a href="' + REPO + '#readme">گیت‌هاب</a> ببینید.</span></div>';
+  }
+
+  function load(idx) {
+    if (idx >= SOURCES.length) { showError(); return; }
+    fetch(SOURCES[idx], { cache: 'no-store' })
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.text();
+      })
+      .then(function (md) {
+        var doc = structure(parse(md));
+        if (!doc.cats.length) throw new Error('no sections');
+        render(doc);
+      })
+      .catch(function () { load(idx + 1); });
+  }
+
+  load(0);
+})();
+</script>
+</body>
+</html>
